@@ -1,0 +1,21 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Working directory
+build/
+.godot/ 
+export_presets.cfg 
+ECHO is on.
+# Godot imports 
+*.import/ 
+ECHO is on.
+# Build artifacts 
+build/ 
+bin/ 
+*.exe 
+*.pck 
+*.apk 
+ECHO is on.
+# System files 
+.DS_Store 
+Thumbs.db 
