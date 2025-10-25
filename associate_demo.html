@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hedera WalletConnect Association Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2>Hedera Wallet Association Demo (WalletConnect)</h2>
+    <p>This is a conceptual demo page. Use a WalletConnect-compatible Hedera wallet (HashPack) to connect and sign a token association transaction.</p>
+    <button id="connect">Connect Wallet</button>
+    <pre id="out"></pre>
+
+    <script>
+    // NOTE: This is a simplified conceptual example. For production use the official WalletConnect and HashPack SDKs.
+    const out = document.getElementById('out');
+    document.getElementById('connect').onclick = async () => {
+      out.textContent = 'This demo requires WalletConnect integration. Please use official SDKs to implement association flow.\n';
+      out.textContent += 'Steps:\n1) Connect wallet via WalletConnect\n2) Build TokenAssociateTransaction\n3) Send request for user signature\n4) Submit signed transaction to Hedera network\n';
+      // We intentionally do not implement full WalletConnect here because wallet SDKs are required.
+    };
+    </script>
+  </body>
+</html>
